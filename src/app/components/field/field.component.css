@@ -1,0 +1,13 @@
+.field {
+  
+  position: relative;
+  top: 40px; left: 40px;
+  width: 500px;
+  height: 1000px;
+  border-end-end-radius: 80px 80px;
+  border-end-start-radius: 80px 80px;
+  border-start-start-radius: 80px 80px;
+  border-start-end-radius: 80px 80px;
+  background-color: rgb(55, 0, 255); /* Example background for the field */
+  border: 2px solid #000;
+}

@@ -1,0 +1,43 @@
+<p>field works!</p>
+
+<div class="field">
+  <!-- Players -->
+  <ng-container *ngFor="let player of players; let i = index">
+    <app-player 
+      [position]="player"
+      (positionChange)="onPlayerPositionChange(i, $event)">
+    </app-player>
+  </ng-container>
+
+    <app-ball [position]="ballPosition"
+              (positionChange)="onBallPositionChange($event)">
+    </app-ball>
+</div>
+
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+<p>end of field</p>
+
+
+  

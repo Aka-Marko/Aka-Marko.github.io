@@ -1,0 +1,25 @@
+/*
+.ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+  }
+  */
+
+  /* Example ball styles */
+.ball {
+  width: 30px; 
+  height: 30px;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;  /* Ensure the ball is positioned correctly */
+  cursor: grab; /* Change cursor to indicate draggable */
+}
+
+.ball:active {
+  cursor: grabbing; /* Change cursor when dragging */
+}

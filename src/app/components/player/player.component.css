@@ -1,0 +1,13 @@
+.player {
+  width: 70px;
+  height: 70px;
+  background-color: green;
+  position: absolute;
+  border-radius: 50%;
+  cursor: grab;
+  transform: translate(-50%, -50%); /* Center the player at the position */
+}
+
+.player:active {
+  cursor: grabbing;
+}
