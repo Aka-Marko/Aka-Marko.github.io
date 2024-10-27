@@ -1,0 +1,9 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full höjd på sidan */
+    background-color: #1e1e1e; /* Mörk bakgrund för hela sidan */
+    color: white; /* För att texten ska vara läsbar mot den mörka bakgrunden */
+  }

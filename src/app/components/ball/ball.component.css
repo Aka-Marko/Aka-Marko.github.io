@@ -1,17 +1,6 @@
-/*
 .ball {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-color: whitesmoke;
-    border-radius: 50%;
-  }
-  */
-
-  /* Example ball styles */
-.ball {
-  width: 30px; 
-  height: 30px;
+  width: 25px; 
+  height: 25px;
   background-color: whitesmoke;
   color: black;
   text-align: center;
@@ -22,4 +11,11 @@
 
 .ball:active {
   cursor: grabbing; /* Change cursor when dragging */
+}
+
+.ball-image {
+  width: 25px; /* Justera storlek som önskat */
+  height: auto; /* Behåll proportionerna */
+  max-width: none; /* Se till att det inte finns en max bredd */
+  max-height: none; /* Se till att det inte finns en max höjd */
 }

@@ -1,29 +1,24 @@
 import { Component } from '@angular/core';
-import { MovementService } from '../../services/movement.service';
+
+/* Add material modules */
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTooltipModule } from '@angular/material/tooltip';
+
 
 @Component({
   selector: 'app-control-panel',
+  standalone: true,
+  imports: [
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatTooltipModule
+  ],
   templateUrl: './control-panel.component.html',
-  styleUrls: ['./control-panel.component.scss']
+  styleUrl: './control-panel.component.css'
 })
 export class ControlPanelComponent {
-  recording: boolean = false;
 
-  constructor(private movementService: MovementService) {}
-
-  startRecording(): void {
-    this.recording = true;
-    this.movementService.startRecording();
-  }
-
-  stopRecording(): void {
-    this.recording = false;
-    this.movementService.recordFrame();
-  }
-
-  playback(): void {
-    const sequence = this.movementService.getRecordedSequence();
-    // You can visualize the playback using a SequencePlaybackComponent.
-    console.log(sequence);
-  }
 }

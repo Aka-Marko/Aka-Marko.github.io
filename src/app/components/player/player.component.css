@@ -1,6 +1,6 @@
 .player {
-  width: 70px;
-  height: 70px;
+  width: 10px;
+  height: 10px;
   background-color: green;
   position: absolute;
   border-radius: 50%;
@@ -10,4 +10,13 @@
 
 .player:active {
   cursor: grabbing;
+}
+
+.player-image {
+  width: 50px; /* Justera storlek som önskat */
+  height: auto; /* Behåll proportionerna */
+  position: absolute;
+  border-radius: 50%; /* Gör bilden till en cirkel */
+  object-fit: cover; /* Klipper bilden så att den fyller cirkeln */
+  transform: translate(-50%, -50%); /* Center the player at the position */
 }

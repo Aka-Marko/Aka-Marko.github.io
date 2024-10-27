@@ -1,4 +1,71 @@
-<p>control-panel works!</p>
-<button (click)="startRecording()">Start Recording</button>
-<button (click)="stopRecording()">Stop Recording</button>
-<button (click)="playback()">Play Back</button>
+<mat-toolbar color="primary" class="control-panel">
+    <button mat-icon-button 
+      matTooltip="Till början" 
+      matTooltipPosition="above" 
+      matTooltipShowDelay="500" 
+      matTooltipHideDelay="100"
+      matTooltipTouchGestures="auto"
+      aria-label="Till början">
+      <mat-icon>first_page</mat-icon>
+    </button>
+    <button mat-icon-button 
+      mat-icon-button matTooltip="Bakåt"
+      atTooltipPosition="above" 
+      matTooltipShowDelay="500" 
+      matTooltipHideDelay="100"
+      matTooltipTouchGestures="auto"
+      aria-label="Bakåt">
+      <mat-icon>navigate_before</mat-icon>
+    </button>
+    <button mat-icon-button 
+      mat-icon-button matTooltip="Spela upp"
+      atTooltipPosition="above" 
+      matTooltipShowDelay="500" 
+      matTooltipHideDelay="100"
+      matTooltipTouchGestures="auto"
+      aria-label="Spela upp">
+      <mat-icon>play_arrow</mat-icon>
+    </button>
+    <button mat-icon-button 
+      mat-icon-button matTooltip="Framåt"
+      atTooltipPosition="above" 
+      matTooltipShowDelay="500" 
+      matTooltipHideDelay="100"
+      matTooltipTouchGestures="auto"
+      aria-label="Framåt">
+      <mat-icon>navigate_next</mat-icon>
+    </button>
+    <button mat-icon-button 
+      matTooltip="Skapa ny"
+      atTooltipPosition="above" 
+      matTooltipShowDelay="500" 
+      matTooltipHideDelay="100"
+      matTooltipTouchGestures="auto"
+      aria-label="Skapa ny">
+      <mat-icon>add_task</mat-icon> <!--add_library, add_circle, add_2, add_diamond-->
+    </button>
+    <button mat-icon-button 
+      matTooltip="Spara sekvens"
+      atTooltipPosition="above" 
+      matTooltipShowDelay="500" 
+      matTooltipHideDelay="100"
+      matTooltipTouchGestures="auto"
+      aria-label="Spara sekvens">
+      <mat-icon>save</mat-icon>
+    </button>
+    <button mat-icon-button 
+      matTooltip="Spara"
+      atTooltipPosition="above" 
+      matTooltipShowDelay="500" 
+      matTooltipHideDelay="100"
+      matTooltipTouchGestures="auto"
+      aria-label="Spara">
+      <mat-icon>download</mat-icon>
+    </button>
+   <!--
+     <button mat-raised-button color="accent" aria-label="Skapa ny">
+      Skapa ny
+    </button>
+    -->
+  </mat-toolbar>
+  

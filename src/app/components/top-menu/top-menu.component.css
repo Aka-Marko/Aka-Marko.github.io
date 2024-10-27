@@ -1,0 +1,21 @@
+.top-toolbar {
+    position: fixed; /* fixed position in top */
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* On top of all elements */
+    background-color: whitesmoke;
+  }
+  
+  .title {
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .logo-image {
+    width: 35px; /* Justera storlek som önskat */
+    height: auto; /* Behåll proportionerna */
+    max-width: none; /* Se till att det inte finns en max bredd */
+    max-height: none; /* Se till att det inte finns en max höjd */
+    margin-left: 10px;
+}

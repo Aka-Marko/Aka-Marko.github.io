@@ -1,26 +1,10 @@
-<!--
-<div class="ball" 
-     [style.left.px]="position.x" 
-     [style.top.px]="position.y" 
-     cdkDrag 
-     (cdkDragEnded)="onDragEnd($event)">
-</div>
-
-
-<div
-class="ball"
-  cdkDrag
-  (cdkDragEnded)="onDragEnd($event)"
-  [ngStyle]="{ 'left.px': position.x, 'top.px': position.y }"
-  style="position: absolute; cursor: move;"
->
-</div>
--->
-
 <div
   class="ball"
   [ngStyle]="{ 'left.px': position.x, 'top.px': position.y }"
   (mousedown)="onMouseDown($event)"
   style="position: absolute; cursor: pointer;"
 >
+<!-- <img src="assets\images\ball.png" alt="ball" class="ball-image" /> -->
 </div>
+
+ 

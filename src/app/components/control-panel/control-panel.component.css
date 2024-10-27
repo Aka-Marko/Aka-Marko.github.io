@@ -1,0 +1,15 @@
+.control-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    /*justify-content: space-around;*/
+    justify-content: center; /* Centrerar knapparna horisontellt */
+    align-items: center; /* Justerar dem vertikalt om det behövs */
+    z-index: 1000; /* On top of all elements */
+  }
+  
+  .control-panel button {
+    margin: 0 10px; /* Lägg till horisontell marginal mellan knapparna */
+  }

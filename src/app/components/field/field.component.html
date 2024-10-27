@@ -1,11 +1,12 @@
-<p>field works!</p>
+<p>field works2!</p>
 
 <div class="field">
   <!-- Players -->
-  <ng-container *ngFor="let player of players; let i = index">
-    <app-player 
-      [position]="player"
-      (positionChange)="onPlayerPositionChange(i, $event)">
+   <ng-container *ngFor="let player of players">
+    <app-player
+      [position]="player.position"
+      [imageUrl]="player.imageUrl" 
+      (positionChange)="onPlayerPositionChange(player.id, $event)">
     </app-player>
   </ng-container>
 
@@ -17,27 +18,3 @@
 <p>end of field</p>
 <p>end of field</p>
 <p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-<p>end of field</p>
-
-
-  
