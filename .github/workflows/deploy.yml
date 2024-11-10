@@ -12,21 +12,21 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Update to the latest version
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3  # Update to the latest version
         with:
-          node-version: '16'
+          node-version: '20'  # Use the latest supported version of Node.js
 
       - name: Install dependencies
         run: npm install
 
       - name: Build the app
-        run: npm run build -- --configuration production  # Removes the need to specify output path and base href here
+        run: npm run build -- --configuration production
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs  # Point to the 'docs' folder
+          publish_dir: ./docs
