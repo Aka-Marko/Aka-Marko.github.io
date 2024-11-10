@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';  // Import CommonModule
   selector: 'app-ball',
   standalone: true,
   templateUrl: './ball.component.html',
-  styleUrls: ['./ball.component.scss'],
+  styleUrls: ['./ball.component.css'],
   imports: [CommonModule],  // Add CommonModule here
 })
 export class BallComponent {

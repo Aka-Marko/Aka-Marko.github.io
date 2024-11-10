@@ -7,7 +7,7 @@ import { CommonModule } from '@angular/common';  // Import CommonModule
   selector: 'app-player',
   standalone: true,
   templateUrl: './player.component.html',
-  styleUrls: ['./player.component.scss'],
+  styleUrls: ['./player.component.css'],
   imports: [CommonModule]  // Add CommonModule here
 })
 export class PlayerComponent {
